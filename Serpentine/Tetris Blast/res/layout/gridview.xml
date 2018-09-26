@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="#111111"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linLevelInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="50dp"
+            android:text="Grid Size: "
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#66AAFF"
+            android:typeface="monospace" />
+
+        <TextView
+            android:id="@+id/txtGridSize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="0 x 0"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#FFAA66"
+            android:typeface="monospace" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linGridView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/linSoundOnOff"
+        android:layout_below="@+id/linLevelInfo"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <!--
+        <GridView
+            android:id="@+id/gridView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:horizontalSpacing="10dp"
+            android:numColumns="auto_fit"
+            android:verticalSpacing="10dp" >
+        </GridView>
+        -->
+
+        <GridView
+            android:id="@+id/grdGridviewMenu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:columnWidth="0dp"
+            android:gravity="center"
+            android:horizontalSpacing="0dp"
+            android:listSelector="@null"
+            android:numColumns="5"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="0dp" >
+        </GridView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linCompletedLevels"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/linSoundOnOff"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Completed: "
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#66AAFF"
+            android:typeface="monospace" />
+
+        <TextView
+            android:id="@+id/txtCompletedLevels"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="00/50 "
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#FFAA66"
+            android:typeface="monospace" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linSoundOnOff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="100dp"
+            android:layout_marginTop="10dp"
+            android:text="Sound: "
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#66AAFF"
+            android:typeface="monospace" />
+
+        <TextView
+            android:id="@+id/txtSoundOnOff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:text="ON "
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#FFAA66"
+            android:typeface="monospace" />
+    </LinearLayout>
+
+</RelativeLayout>

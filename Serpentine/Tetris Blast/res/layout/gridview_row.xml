@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relGridviewRow"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="1dp"
+    android:padding="4dp" >
+
+    <ImageView
+        android:id="@+id/imgGridview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" >
+
+        <!-- android:background="@drawable/gridview_border" -->
+    </ImageView>
+
+    <TextView
+        android:id="@+id/txtGridview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@+id/imgGridview"
+        android:layout_alignLeft="@+id/imgGridview"
+        android:layout_alignRight="@+id/imgGridview"
+        android:layout_alignTop="@+id/imgGridview"
+        android:layout_marginTop="0dp"
+        android:ellipsize="marquee"
+        android:gravity="center_vertical|center_horizontal"
+        android:singleLine="true"
+        android:text="99"
+        android:textColor="#FFAA66"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        android:visibility="invisible" >
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@+id/imgGridview"
+        android:layout_alignLeft="@+id/imgGridview"
+        android:layout_alignRight="@+id/imgGridview"
+        android:layout_alignTop="@+id/imgGridview"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/txtMoves"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="999"
+            android:textColor="#FFAA66"
+            android:textStyle="bold"
+            android:typeface="monospace"
+            android:visibility="invisible" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/txtMovesLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="Moves"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#66AAFF"
+            android:textStyle="normal"
+            android:typeface="monospace"
+            android:visibility="invisible" >
+        </TextView>
+    </LinearLayout>
+
+</RelativeLayout>

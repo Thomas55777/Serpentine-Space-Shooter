@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical|center_horizontal"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp" >
+
+        <LinearLayout
+            android:id="@+id/linGridSelect"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/gridTutorial"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/gridview_border"
+                android:gravity="center_vertical|center_horizontal"
+                android:orientation="horizontal"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tutorial"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#FFAA66"
+                    android:typeface="monospace" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/grid5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/gridview_border"
+                android:orientation="horizontal"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:weightSum="1" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".6"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="Grid Size: "
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#66AAFF"
+                    android:typeface="monospace" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".4"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="5 x 5"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#66FFAA"
+                    android:typeface="monospace" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/grid6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/gridview_border"
+                android:orientation="horizontal"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:weightSum="1" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".6"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="Grid Size: "
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#66AAFF"
+                    android:typeface="monospace" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".4"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="6 x 6"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#AA66FF"
+                    android:typeface="monospace" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/grid7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/gridview_border"
+                android:orientation="horizontal"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:weightSum="1" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".6"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="Grid Size: "
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#66AAFF"
+                    android:typeface="monospace" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".4"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="7 x 7"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#AAFF66"
+                    android:typeface="monospace" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/grid8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/gridview_border"
+                android:orientation="horizontal"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:weightSum="1" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".6"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="Grid Size: "
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#66AAFF"
+                    android:typeface="monospace" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".4"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="8 x 8"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#FF66AA"
+                    android:typeface="monospace" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/grid9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/gridview_border"
+                android:orientation="horizontal"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:weightSum="1" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".6"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="Grid Size: "
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#66AAFF"
+                    android:typeface="monospace" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".4"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="9 x 9"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#FF66AA"
+                    android:typeface="monospace" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/grid10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/gridview_border"
+                android:orientation="horizontal"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:weightSum="1" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".6"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="Grid Size: "
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#66AAFF"
+                    android:typeface="monospace" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".4"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="10 x 10"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#FF66AA"
+                    android:typeface="monospace" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+</LinearLayout>
